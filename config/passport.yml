@@ -1,0 +1,4 @@
+development:
+  baseURL: 'http://localhost:3000/'
+  local: true
+  google: true

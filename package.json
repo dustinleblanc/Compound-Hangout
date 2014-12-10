@@ -1,0 +1,33 @@
+{
+  "name": "sb_hangouts",
+  "version": "0.0.1",
+  "engines": [
+    "node >= 0.8.0"
+  ],
+  "main": "server.coffee",
+  "dependencies": {
+    "ejs": "*",
+    "ejs-ext": "latest",
+    "express": "~3.x",
+    "compound": ">= 1.1.0",
+    "jugglingdb": ">= 0.1.0",
+    "coffee-script": ">= 1.1.1",
+    "stylus": "latest",
+    "seedjs": "latest",
+    "co-assets-compiler": "*"
+  },
+  "devDependencies": {
+    "co-generators": "*",
+    "compound-passport": "0.0.9",
+    "mocha": ">= 0",
+    "nodeunit": "*",
+    "passport": "^0.2.1",
+    "semicov": "*",
+    "should": ">= 0",
+    "sinon": "*",
+    "supertest": ">= 0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require test/init.js test/*/*.test.js"
+  }
+}

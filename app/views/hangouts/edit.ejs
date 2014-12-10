@@ -1,0 +1,18 @@
+<ul class="breadcrumb">
+    <li><a href="/">Home</a> <span class="divider">/</span></li>
+    <li><a href="<%- pathTo.hangouts() %>">hangouts</a> <span class="divider">/</span></li>
+    <li class="active"><a href="#">Edit hangout</a></li>
+</ul>
+
+<div class="page-header">
+    <h1>Edit hangout</h1>
+</div>
+
+<% var form = formFor(hangout, {action: pathTo.hangout(hangout), method: 'PUT', id: "hangout-form", class: 'form-horizontal'}) %>
+<%- form.begin() %>
+<%- include _form %>
+<div class="form-actions">
+    <%- form.submit('<i class="icon-ok icon-white"></i> Update hangout', {class: 'btn btn-primary'}) %> or
+    <%- linkTo('Cancel', pathTo.hangout(hangout), {class: 'btn'}) %>
+</div>
+<%- form.end() %>
